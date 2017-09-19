@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <title>Servicios</title>
+  <!-- carga de archivos css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <!-- Cargando fuentes -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i" rel="stylesheet">
+  <!-- Cargando iconos -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <!-- animate -->
+  <link rel="stylesheet" href="css/animate.css">
+</head>
+<body class="paginas-internas">
+  <section class="bienvenidos">
+    <header class="encabezado navbar fixed-top" role="banner" id="encabezado">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img src="images/logo.svg" alt="Logo del sitio">
+        </a>
+        <button type="button" name="button" class="boton-buscar" type="button" data-toggle="collapse" data-target="#bloque-buscar" aria-expanded="false" aria-controls="collapseExample">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+        <button type="button" name="button" class="boton-menu hidden-md-up" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false" aria-controls="collapseExample">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <form action="#" id="bloque-buscar" class="collapse">
+          <div class="contenedor-bloque-buscar">
+            <input type="text" placeholder="Buscar...">
+            <input type="submit" value="Buscar">
+          </div>
+        </form>
+        <nav id="menu-principal" class="collapse">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li class="active"><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="texto-encabezado text-center">
+      <div class="container">
+        <h1 class="display-4 wow slideInLeft">Contacto</h1>
+        <p class="wow bounceInUp">Estamos listos para ayudarte</p>
+      </div>
+    </div>
+  </section>
+  <section class="ruta py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-right">
+          <a href="index.html">Inicio</a> >> Contacto
+        </div>
+      </div>
+    </div>
+  </section>
+  <main class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h2 class="mb-3">Formulario de contacto</h2>
+          <form class="" >
+            <div class="form-group row">
+              <label for="nombre" class="col-form-label col-md-4">Nombre</label>
+              <div class="col-md-8">
+                <input type="text" id="nombre" data-toggle="tooltip" data-placement="top" title="Nombre completo" class="form-control" name="nombre" value="" placeholder="Ingrese su nombre">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="email" class="col-form-label col-md-4">Email</label>
+              <div class="col-md-8">
+                <input type="text" id="email"class="form-control" name="email" value="" placeholder="Ingrese su email" data-toggle="tooltip" data-placement="top" title="Mensaje">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="mensaje" class="col-form-label col-md-4">Mensaje</label>
+              <div class="col-md-8">
+                <textarea name="mensaje" class="form-control" id="mensaje" rows="8" cols="80" placeholder="Ingrese su mensaje"></textarea>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-8 offset-md-4">
+                <button type="submit" class="btn btn-primary" name="button">Enviar</button>
+                <button type="reset" class="btn btn-secondary" name="button">Limpiar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <h3>Detalle de contacto</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="piedepagina py-3" role="contentinfo">
+    <div class="container">
+      <p>2017 NETWORK Todos los derechos reservados</p>
+      <ul class="redes-sociales">
+        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+  <a data-scroll href="#encabezado" class="ir-arriba"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
+  <!-- Carga de archivos js -->
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="js/wow.min.js"></script>
+  <script type="text/javascript" src="js/smooth-scroll.min.js"></script>
+  <script type="text/javascript" src="js/sitio.js"></script>
+</body>
+
+</html>
